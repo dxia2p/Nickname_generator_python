@@ -39,3 +39,9 @@ while inp != 6:
                 print(f"{nickname} added to the list.")
         case 5:
             print("REMOVE A NICKNAME")
+            nickname = input("Please enter a nickname to remove: ")
+            if nickname in nicknames:
+                nicknames.remove(nickname)
+                print(f"{nickname} removed from the nickname list.")
+            else:
+                print(f"{nickname} was not found in the nickname list.")
